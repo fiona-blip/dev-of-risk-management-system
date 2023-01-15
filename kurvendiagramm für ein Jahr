@@ -1,0 +1,7 @@
+#Backtesting
+
+Wert<-log((wert_berechnen-1/wert_berechnen)/wert_berechnen)
+
+ggplot(df, aes(Datum)) +                    # basic graphical object
+  geom_line(aes(y=werte), colour="red") +  # first layer
+  geom_line(aes(y=Value_at_risk), colour="green")  # second layer
